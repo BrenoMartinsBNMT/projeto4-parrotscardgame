@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  background: #eef9bf;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.name-of-game {
+  padding: 40px 0px 40px 0px;
+  display: flex;
+  justify-content: center;
+}
+.name-of-game span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 66px;
+  letter-spacing: -0.004em;
+
+  color: #75b79e;
+}
+.parrot-game {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-game {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin-right: 44px;
+  position: relative;
+  width: 200px;
+  height: 219px;
+  transform-style: preserve-3d;
+  transition: all 0.5s;
+  backface-visibility: hidden;
+}
+.card-game img {
+  width: 150px;
+  height: 150px;
+}
+
+.card-game-front,
+.card-game-back {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 160px;
+  height: 219px;
+  background: #a7e9af;
+  border: 1px solid #99cea8;
+  backface-visibility: hidden;
+}
+
+.card-game-front {
+  transform: rotateY(180deg);
+}
+
+.card-game-back-turn {
+  transform: rotateY(180deg);
+  transition: 500ms;
+}
+.card-game-front-turn {
+  transform: rotateY(0deg);
+  transition: 500ms;
+}
