@@ -19,6 +19,7 @@ body {
   justify-content: center;
 }
 .name-of-game span {
+  text-align: center;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -30,9 +31,11 @@ body {
 }
 .parrot-game {
   position: relative;
-  width: 100%;
-  height: 100%;
+  margin-right: 15%;
+  margin-left: 15%;
+
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .card-game {
@@ -40,8 +43,9 @@ body {
 
   justify-content: center;
   align-items: center;
-  margin-right: 44px;
+
   position: relative;
+  margin-top: 34px;
   width: 200px;
   height: 219px;
   transform-style: preserve-3d;
